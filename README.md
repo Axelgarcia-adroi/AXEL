@@ -110,6 +110,11 @@
       .card{grid-template-columns:1fr;text-align:center;padding:20px}
       .heart{margin:0 auto}
     }
+    h1:hover{
+        color: red;
+        font-size: 25px;
+        cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -127,11 +132,11 @@
       </div>
 
       <div class="controls">
-        <button class="btn" id="reveal">Revelar mensaje</button>
+        <button class="btn" id="reveal">❤️</button>
       </div>
 
       <footer>
-       presiona "Revelar mensaje"amorcito❤️
+       amorcito presiona ❤️
       </footer>
     </div>
   </main>
@@ -140,10 +145,10 @@
     const defaultName = "Kadie Paola Delgado Flores";
     const defaultMessage = `Hola ${defaultName} ❤
 
-Cada día a tu lado hace que el mundo sea más sencillo y bonito.
-Tu risa es mi canción favorita y tus abrazos mi lugar seguro.
+Cada día a tu lado hace que el mundo sea más sencillo y bonitobonito🥰.
+Tu risa es mi canción favorita y tus abrazos mi lugar seguroseguro🌹.
 
-Gracias por ser tú. Te amo con todo mi corazón.`;
+Gracias por ser tú. Te amo con todo mi corazón💓💍.`;
 
     const nameEl = document.getElementById("name");
     const typeEl = document.getElementById("typewriter");
