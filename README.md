@@ -1,5 +1,5 @@
-[practica2.html](https://github.com/user-attachments/files/22248454/practica2.html)
-<!doctype html>
+[amorcito.html](https://github.com/user-attachments/files/22248454/practica2.html)
+
 <html lang="es">
 <head>
   <meta charset="utf-8" />
