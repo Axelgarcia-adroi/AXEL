@@ -179,7 +179,7 @@
 
   <script>
     // Cambia aquí el nombre y el mensaje si quieres (usa comillas).
-    const defaultName = "kadie Paola Delgado Flores la niña mas hermosa de todo el mundo";
+    const defaultName = "kadie Paola Delgado Flores ❤️🌹";
     const defaultMessage = `Hola ${defaultName} ❤
 
 Cada día a tu lado hace que el mundo sea más sencillo y bonito.
