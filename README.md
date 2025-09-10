@@ -1,6 +1,6 @@
 practica amo mucho
 [practica1.html](https://github.com/user-attachments/files/22248196/practica1.html)
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
