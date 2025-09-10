@@ -149,7 +149,7 @@
 Cada día a tu lado hace que el mundo sea más sencillo y bonitobonito🥰.
 Tu risa es mi canción favorita y tus abrazos mi lugar seguroseguro🌹.
 
-Gracias por ser tú. Te amo con todo mi corazón💓💍.`;
+Gracias por ser tú. Te amo con todo mi corazón💓 casate conmigo💍.`;
 
     const nameEl = document.getElementById("name");
     const typeEl = document.getElementById("typewriter");
