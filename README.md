@@ -171,9 +171,7 @@
         
       </div>
 
-      <footer>
-        Tip: dale "Revelar mensaje" y verás algo dulce. Puedes personalizar nombre y texto.
-      </footer>
+     
     </div>
   </main>
 
