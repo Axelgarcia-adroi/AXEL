@@ -98,6 +98,7 @@
       font-weight:600;
       cursor:pointer;
       box-shadow:0 6px 18px rgba(255,59,92,0.2);
+      margin-left: 150px;
     }
     .btn.ghost{
       background:transparent;
