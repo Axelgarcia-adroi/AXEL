@@ -168,7 +168,7 @@
 
       <div class="controls">
         <button class="btn" id="reveal">Revelar mensaje</button>
-        <button class="btn ghost" id="personalizar">Personalizar</button>
+        
       </div>
 
       <footer>
