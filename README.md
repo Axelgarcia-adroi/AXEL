@@ -17,7 +17,7 @@ practica amo mucho
 
 
 [producto.html](https://github.com/user-attachments/files/22248260/producto.html)
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
