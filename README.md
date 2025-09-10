@@ -10,7 +10,7 @@ practica amo mucho
 </head>
 <body>
     <CENTER><h1>BIENVENIDO A MI SITIO WEB</h1>
-    <P>Este sitio esta en construccion para mejorar para el mundo </P></CENTER>
+    <P>Este sitio esta en construccion para mejorar el mundo </P></CENTER>
     
 </body>
 </html>
