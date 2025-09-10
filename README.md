@@ -1,4 +1,4 @@
-practica1.html
+practica amo mucho
 [practica1.html](https://github.com/user-attachments/files/22248039/practica1.html)
 <!DOCTYPE html>
 <html lang="en">
