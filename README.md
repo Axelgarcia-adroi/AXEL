@@ -179,7 +179,7 @@
 
   <script>
     // Cambia aquí el nombre y el mensaje si quieres (usa comillas).
-    const defaultName = "Amor";
+    const defaultName = "kadie Paola Delgado Flores la niña mas hermosa de todo el mundo";
     const defaultMessage = `Hola ${defaultName} ❤
 
 Cada día a tu lado hace que el mundo sea más sencillo y bonito.
@@ -210,7 +210,7 @@ Gracias por ser tú. Te quiero más de lo que las palabras alcanzan a decir.`;
     });
 
     personalBtn.addEventListener('click', () => {
-      const newName = prompt("Escribe el nombre que quieres mostrar (ej. 'María'):", defaultName);
+      const newName = prompt("Escribe el nombre que quieres mostrar :", defaultName);
       if(newName === null) return;
       const newMsg = prompt("Escribe el mensaje (puedes usar varias líneas). Puedes dejar vacío para usar el mensaje por defecto:", defaultMessage);
       if(newName.trim()) nameEl.textContent = newName.trim();
