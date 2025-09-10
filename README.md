@@ -44,7 +44,7 @@
     .heart-wrap{display:flex;align-items:center;justify-content:center}
     .heart{
       width:150px;
-      height:135px;
+      height:150px;
       background:var(--accent);
       position:relative;
       transform:rotate(-45deg);
