@@ -1,4 +1,4 @@
-[amorcito.html](https://github.com/user-attachments/files/22248454/practica2.html)
+[amorcito.html](https://github.com/user-attachments/files/22248800/amorcito.html)
 
 <html lang="es">
 <head>
@@ -8,90 +8,69 @@
   <style>
     :root{
       --bg:#0f1724;
-      --card:#0b1220;
-      --accent:#ff6b81;
-      --glass: rgba(255,255,255,0.06);
+      --accent:#ff3b5c;
       --text:#e6eef8;
       --muted:#9fb0c9;
+      --glass: rgba(255,255,255,0.06);
     }
-    * {box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    *{box-sizing:border-box;margin:0;padding:0}
     body{
-      background: radial-gradient(circle at 10% 10%, rgba(255,107,129,0.06), transparent 8%),
-                  radial-gradient(circle at 90% 80%, rgba(255,255,255,0.02), transparent 15%),
+      height:100%;
+      background: radial-gradient(circle at 10% 10%, rgba(255,107,129,0.08), transparent 8%),
+                  radial-gradient(circle at 90% 80%, rgba(255,255,255,0.03), transparent 15%),
                   var(--bg);
       color:var(--text);
       display:flex;
       align-items:center;
       justify-content:center;
       padding:24px;
+      font-family:system-ui,Segoe UI,Roboto,Arial;
     }
 
     .card{
-      width:100%;
       max-width:760px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
       border-radius:18px;
       padding:28px;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
-      backdrop-filter: blur(6px);
-      border: 1px solid rgba(255,255,255,0.04);
+      box-shadow:0 8px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.04);
       display:grid;
-      grid-template-columns: 240px 1fr;
+      grid-template-columns:240px 1fr;
       gap:20px;
       align-items:center;
+      backdrop-filter:blur(6px);
     }
 
-    .heart-wrap{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:12px;
-    }
-
+    .heart-wrap{display:flex;align-items:center;justify-content:center}
     .heart{
-      width:160px;
-      height:160px;
+      width:150px;
+      height:135px;
+      background:var(--accent);
       position:relative;
-      transform:scale(1);
-      animation: pulse 1.6s infinite;
-      filter: drop-shadow(0 8px 24px rgba(255,107,129,0.18));
+      transform:rotate(-45deg);
+      animation:pulse 1.4s infinite;
+      box-shadow:0 8px 20px rgba(255,59,92,0.4);
     }
-    .heart:before, .heart:after{
+    .heart:before,
+    .heart:after{
       content:"";
       position:absolute;
-      width:100px;
-      height:160px;
-      background:linear-gradient(180deg,var(--accent), #ff3a63);
-      border-radius:100px 100px 0 0;
-      top:0;
-      left:30px;
-      transform:rotate(-45deg);
+      width:150px;
+      height:150px;
+      background:var(--accent);
+      border-radius:50%;
     }
-    .heart:after{
-      left:0;
-      transform:rotate(45deg);
-    }
+    .heart:before{top:-75px;left:0}
+    .heart:after{left:75px;top:0}
     @keyframes pulse{
-      0%{ transform:scale(0.98) }
-      50%{ transform:scale(1.06) }
-      100%{ transform:scale(0.98) }
+      0%{transform:rotate(-45deg) scale(0.95)}
+      50%{transform:rotate(-45deg) scale(1.08)}
+      100%{transform:rotate(-45deg) scale(0.95)}
     }
 
-    .content{
-      padding:6px 4px;
-    }
-
-    h1{
-      margin:0 0 8px 0;
-      font-size:20px;
-      letter-spacing:0.2px;
-    }
-    .to{
-      color:var(--muted);
-      font-size:14px;
-      margin-bottom:12px;
-    }
+    .content{padding:6px 4px}
+    h1{margin-bottom:8px;font-size:20px}
+    .to{color:var(--muted);font-size:14px;margin-bottom:12px}
 
     .message{
       background:var(--glass);
@@ -100,133 +79,102 @@
       min-height:120px;
       display:flex;
       align-items:flex-start;
-      position:relative;
       overflow:hidden;
     }
-
     .typewriter{
-      font-family: "Georgia", serif;
+      font-family:"Georgia",serif;
       line-height:1.5;
       font-size:16px;
-      color:var(--text);
       white-space:pre-wrap;
-      word-break:break-word;
     }
 
-    .controls{
-      margin-top:12px;
-      display:flex;
-      gap:10px;
-      align-items:center;
-    }
+    .controls{margin-top:12px;display:flex;gap:10px}
     .btn{
-      background:linear-gradient(90deg,var(--accent), #ff3a63);
+      background:linear-gradient(90deg,var(--accent),#ff6381);
       border:0;
       padding:10px 14px;
       border-radius:10px;
-      color:white;
-      cursor:pointer;
+      color:#fff;
       font-weight:600;
-      box-shadow: 0 6px 18px rgba(255,107,129,0.14);
+      cursor:pointer;
+      box-shadow:0 6px 18px rgba(255,59,92,0.2);
     }
     .btn.ghost{
       background:transparent;
-      border:1px solid rgba(255,255,255,0.06);
-      color:var(--muted);
-      font-weight:600;
-    }
-
-    footer{
-      margin-top:14px;
-      font-size:13px;
+      border:1px solid rgba(255,255,255,0.08);
       color:var(--muted);
     }
+    footer{margin-top:14px;font-size:13px;color:var(--muted)}
 
-    /* responsive */
-    @media (max-width:680px){
-      .card{ grid-template-columns: 1fr; text-align:center; gap:12px; padding:20px}
-      .heart{ margin:0 auto }
-      .content{ padding-top:0 }
+    @media(max-width:680px){
+      .card{grid-template-columns:1fr;text-align:center;padding:20px}
+      .heart{margin:0 auto}
     }
   </style>
 </head>
 <body>
-  <main class="card" role="main">
-    <div class="heart-wrap" aria-hidden="true">
+  <main class="card">
+    <div class="heart-wrap">
       <div class="heart"></div>
     </div>
 
     <div class="content">
-      <div class="to">Para: <strong id="name">Mi Amor</strong></div>
+      <div class="to">Para: <strong id="name">Kadie Paola Delgado Flores</strong></div>
       <h1>Un pequeño mensaje para ti</h1>
 
-      <div class="message" id="messageBox" aria-live="polite">
-        <div class="typewriter" id="typewriter">
-          <!-- El texto aparecerá aquí -->
-        </div>
+      <div class="message">
+        <div class="typewriter" id="typewriter"></div>
       </div>
 
       <div class="controls">
         <button class="btn" id="reveal">Revelar mensaje</button>
-        
       </div>
 
-     <footer>
-        Te amo tanto mi corazon besitos changuita.
+      <footer>
+       presiona "Revelar mensaje"amorcito❤️
       </footer>
     </div>
   </main>
 
   <script>
-    // Cambia aquí el nombre y el mensaje si quieres (usa comillas).
-    const defaultName = "kadie Paola Delgado Flores ❤️🌹";
+    const defaultName = "Kadie Paola Delgado Flores";
     const defaultMessage = `Hola ${defaultName} ❤
 
 Cada día a tu lado hace que el mundo sea más sencillo y bonito.
 Tu risa es mi canción favorita y tus abrazos mi lugar seguro.
 
-Gracias por ser tú. Te quiero más de lo que las palabras alcanzan a decir.`;
+Gracias por ser tú. Te amo con todo mi corazón.`;
 
-    const nameEl = document.getElementById('name');
-    const typeEl = document.getElementById('typewriter');
-    const revealBtn = document.getElementById('reveal');
-    const personalBtn = document.getElementById('personalizar');
+    const nameEl = document.getElementById("name");
+    const typeEl = document.getElementById("typewriter");
+    const revealBtn = document.getElementById("reveal");
+    const personalBtn = document.getElementById("personalizar");
 
-    // Preload default
     nameEl.textContent = defaultName;
 
     function typeText(text, el, speed=28){
-      el.textContent = "";
-      let i = 0;
-      const interval = setInterval(() => {
-        el.textContent += text.charAt(i);
+      el.textContent="";
+      let i=0;
+      const interval=setInterval(()=>{
+        el.textContent+=text.charAt(i);
         i++;
-        if(i >= text.length) clearInterval(interval);
-      }, speed);
+        if(i>=text.length) clearInterval(interval);
+      },speed);
     }
 
-    revealBtn.addEventListener('click', () => {
-      typeText(defaultMessage, typeEl);
-    });
+    revealBtn.addEventListener("click",()=>typeText(defaultMessage,typeEl));
 
-    personalBtn.addEventListener('click', () => {
-      const newName = prompt("Escribe el nombre que quieres mostrar :", defaultName);
-      if(newName === null) return;
-      const newMsg = prompt("Escribe el mensaje (puedes usar varias líneas). Puedes dejar vacío para usar el mensaje por defecto:", defaultMessage);
-      if(newName.trim()) nameEl.textContent = newName.trim();
-      if(newMsg !== null && newMsg.trim() !== "") {
-        // Si el usuario escribió un mensaje nuevo, úsalo para escribir
-        const final = newMsg.replace(/\{name\}/g, newName.trim() || defaultName);
-        typeText(final, typeEl);
-      } else {
-        // usar mensaje por defecto con nombre actualizado
-        const final = defaultMessage.replace(defaultName, newName.trim() || defaultName);
-        typeText(final, typeEl);
+    personalBtn.addEventListener("click",()=>{
+      const newName=prompt("Escribe el nombre:",defaultName);
+      if(newName===null) return;
+      const newMsg=prompt("Escribe el mensaje:",defaultMessage);
+      if(newName.trim()) nameEl.textContent=newName.trim();
+      if(newMsg!==null && newMsg.trim()!==""){
+        typeText(newMsg.replace(/\{name\}/g,newName.trim()),typeEl);
+      }else{
+        typeText(defaultMessage.replace(defaultName,newName.trim()),typeEl);
       }
     });
-
-    // opcional: mostrar automáticamente después de unos segundos
-    // setTimeout(() => revealBtn.click(), 900);
   </script>
 </body>
 </html>
